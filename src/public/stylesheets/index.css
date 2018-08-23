@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+.navbar {
+    display : flex ;
+    background: blue;
+}
+.navbar ul{
+    display: flex;
+    list-style: none ;
+}
+.navbar ul li a{
+    margin-left: 30px ;
+    justify-content: center;
+    color: aliceblue ;
+    font-size : 1.2em ;
+    text-decoration: none ;
+}
+.main{
+    background: black ;
+    color: #ffffff;
+    padding: 5px ;
+}

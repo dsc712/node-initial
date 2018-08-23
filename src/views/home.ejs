@@ -1,0 +1,21 @@
+<% include partials/header.ejs%>
+
+ <div class="navbar">
+
+   <ul>
+       <li><a href="/">HOME</a></li>
+       <li><a href="/firstPage">FIRST PAGE</a></li>
+       <li><a href="/secondPage">SECOND PAGE</a></li>
+       <li><i><a  href="/api">API</a></i></li>
+       <% if(req.originalUrl === '/api'){ %>
+           <li><i><a href="/api/users">USERS</a></i></li>
+       <% } %>
+   </ul>
+
+ </div>
+
+ <div class="main">
+     <h1> Current Route is : <%= page %></h1>
+ </div>
+
+<% include partials/footer.ejs %>
